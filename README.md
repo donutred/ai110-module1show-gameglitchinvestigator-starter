@@ -25,19 +25,19 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+The game's purpose is to play a game of higher or lower where the user tries to find a secret number by guessing and being given hints of if their number is higher or lower than the secret number.
+
+Some of the bugs I found were higher and lower hints being mixed up which was fixed by correcting the messages being shown, and the game not being able to be restarted after ending which was fixed by not stopping the session after the game ended.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 50
+2. Game returns too high
+3. User enters a guess of 30 and is told too low
+4. Score updates after each guess
+5. After guesing correctly or running out of guesses, the user's score is reported.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -48,6 +48,7 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 # pytest tests/
 # ========================= X passed in 0.XXs =========================
 ```
+4 passed in 0.02s
 
 ## 🚀 Stretch Features
 
